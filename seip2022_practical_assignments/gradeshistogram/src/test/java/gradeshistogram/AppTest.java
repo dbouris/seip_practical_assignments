@@ -1,4 +1,4 @@
-package gr;
+package gradeshistogram;
 
 import static org.junit.Assert.assertTrue;
 
