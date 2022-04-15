@@ -4,7 +4,7 @@ package gradeshistogram;
  * Hello world!
  *
  */
-public class App 
+public class HistogramGenerator
 {
     public static void main( String[] args )
     {
