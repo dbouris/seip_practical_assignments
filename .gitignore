@@ -1,6 +1,11 @@
+#exclude all the .class / .txt files
 *.class
 *.txt
+
+#exclude all the ide files
 .classpath
-target/
 .project
 .settings
+
+#exclude the maven created files
+target/
