@@ -36,13 +36,6 @@ public class HistogramGenerator
     }
 
 
-
-
-
-
-
-
-
     public static void main( String[] args )
     {
         String file_path = args[0];
