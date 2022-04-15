@@ -1,4 +1,6 @@
 *.class
 *.txt
-*.classpath
+.classpath
 target/
+.project
+.settings
