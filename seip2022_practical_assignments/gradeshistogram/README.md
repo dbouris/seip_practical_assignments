@@ -14,7 +14,7 @@ Requirements for the software to run and build.
 - Maven
 
 ## Installation
-In the root directory of the project run `mvn package`. At the target folder, the gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar will be created.
+In the root directory of the project run `mvn package`. At the target folder, the `gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar will be created`.
 
 ## Running
 To run the project, from the root directory run `java -jar gradeshistogram/target/gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar path-of-file.txt`
