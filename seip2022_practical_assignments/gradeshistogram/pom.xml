@@ -45,6 +45,18 @@
   <build>
       <plugins>
 
+        <!-- plugin to create an executable jar -->
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.0.2</version>
+          <executions>
+            <execution>
+               <id>default-jar</id>
+               <phase>none</phase>
+            </execution>
+          </executions>
+        </plugin>
+      
 
         <!-- plugin to create a fat jar (dependecies included) -->
         <plugin>
