@@ -10,7 +10,12 @@
   <artifactId>gradeshistogram</artifactId>
   <version>1.0-SNAPSHOT</version>
 
-  <name>gradeshistogram</name>
+  <name>Histogram Generator</name>
+  <description>
+    This is an application which takes a .txt file argument from the 
+    command line containing ints, calculates the frequencies and renders 
+    a Histogram graph.
+  </description>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
 
