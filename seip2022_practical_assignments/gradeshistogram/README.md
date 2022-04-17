@@ -20,3 +20,7 @@ In the root directory of the project run `mvn package`. At the target folder, th
 To run the project, from the root directory run `java -jar gradeshistogram/target/gradeshistogram-1.0-SNAPSHOT-jar-with-dependencies.jar path-of-file.txt`
 <br>
 Note that you should provide the absolute path of the .txt file for the app to succesfully identify it. 
+
+## Author
+---
+Dimitris Bouris
