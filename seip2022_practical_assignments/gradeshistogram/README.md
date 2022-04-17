@@ -22,5 +22,4 @@ To run the project, from the root directory run `java -jar gradeshistogram/targe
 Note that you should provide the absolute path of the .txt file for the app to succesfully identify it. 
 
 ## Author
----
 Dimitris Bouris
