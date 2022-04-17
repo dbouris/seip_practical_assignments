@@ -7,11 +7,9 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
-  <name>Histogram Generator</name>
+  <name>SEIP Assignments</name>
   <description>
-    This is an application which takes a .txt file argument from the 
-    command line containing ints, calculates the frequencies and renders 
-    a Histogram graph.
+    
 
   </description>
 
