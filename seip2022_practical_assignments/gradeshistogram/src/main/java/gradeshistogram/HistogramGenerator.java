@@ -57,6 +57,7 @@ public class HistogramGenerator {
      * It uses the JFreeChart library.
      * 
      * @param dataValues the frequencies of the numbers.
+     * This method belongs to Antonis Gkortzis.
      */
 
     public static void generateChart(int[] dataValues) {
@@ -115,8 +116,14 @@ public class HistogramGenerator {
     }
 
     public static void main(String[] args) {
+        
+        // read the file_path
         String file_path = args[0];
+
+        // read the numbers of the .txt file given
         ArrayList<Integer> grades = readNumbers(file_path);
+
+        // get the frequencies and generate the chart
         int[] frequencies = calculateFreq(grades);
         generateChart(frequencies);
 
