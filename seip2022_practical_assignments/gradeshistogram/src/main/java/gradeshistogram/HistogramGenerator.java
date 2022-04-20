@@ -3,6 +3,8 @@ package gradeshistogram;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Scanner;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartFrame;
@@ -103,7 +105,7 @@ public class HistogramGenerator {
      */
 
     public static int[] calculateFreq(ArrayList<Integer> gradeList) {
-        int[] freq = new int[11];
+        int[] freq = new int[Collections.max(gradeList)+1];
 
         for (int i = 1; i < freq.length; i++) {
             freq[i] = 0;
