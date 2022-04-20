@@ -11,4 +11,4 @@ Create a Java application (using the Maven build-automation tool) that reads a f
 ---
 
 ## Author 
-Dimitris Bouris 
+[Dimitris Bouris](https://github.com/dbouris)
