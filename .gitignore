@@ -1,0 +1,14 @@
+#exclude all the .class / .txt files
+*.class
+*.txt
+
+#exclude all the ide files
+.classpath
+.project
+.settings
+
+#ecxlude some vscode generated files
+.vscode
+
+#exclude the maven created files
+target/
