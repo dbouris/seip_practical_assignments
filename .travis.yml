@@ -1,7 +1,7 @@
 language: java
 
 jdk:
-  - openjdk8
+  - openjdk11
 
 branches:
   only:
@@ -13,7 +13,6 @@ before_script:
 
 script:
   - mvn clean package
-
 after_success:
   - echo "Process terminated successfully."
 
