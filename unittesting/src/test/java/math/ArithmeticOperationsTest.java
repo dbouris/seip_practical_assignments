@@ -95,7 +95,7 @@ public class ArithmeticOperationsTest {
     @Test
     public void test_multiply_second_zero() {
         thrown.expect(ArithmeticException.class);
-        ao.multiply(-100, 0);
+        ao.multiply(100, 0);
     }
 
     @Test
