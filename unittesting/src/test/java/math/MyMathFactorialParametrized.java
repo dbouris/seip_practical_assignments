@@ -10,6 +10,15 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
+/**
+ * The MyMathFactorialParametrized provides a paremetrized
+ * test case for the factorial method testing numbers 0,1,2,12
+ * 
+ * @author dbouris
+ * @version 1.0
+ * @since 2022-05-14
+ */
+
 @RunWith(Parameterized.class)
 public class MyMathFactorialParametrized {
 
@@ -26,10 +35,9 @@ public class MyMathFactorialParametrized {
         return Arrays.asList(data);
     }
 
-    @Test 
-    public void test_factorial(){
+    @Test
+    public void test_factorial() {
         Assert.assertEquals(result, mm.factorial(n), 0.0);
     }
-
 
 }
