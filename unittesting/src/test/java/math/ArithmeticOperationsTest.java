@@ -1,7 +1,6 @@
 package math;
 
 import org.junit.*;
-import org.junit.internal.runners.statements.ExpectException;
 import org.junit.rules.ExpectedException;
 
 /**
