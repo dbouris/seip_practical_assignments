@@ -125,4 +125,11 @@ public class ArithmeticOperationsTest {
         ao.multiply(10, Integer.MAX_VALUE);
     }
 
+    @Test
+    public void test_multiply_both_MAXVALUE() {
+        thrown.expect(IllegalArgumentException.class);
+        thrown.expectMessage("The product does not fit in an Integer variable");
+        ao.multiply(Integer.MAX_VALUE, Integer.MAX_VALUE);
+    }
+
 }
