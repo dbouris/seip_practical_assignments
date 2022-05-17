@@ -93,14 +93,12 @@ public class ArithmeticOperationsTest {
 
     @Test
     public void test_multiply_second_zero() {
-        thrown.expect(ArithmeticException.class);
-        ao.multiply(100, 0);
+        Assert.assertEquals(0, ao.multiply(100, 0));
     }
 
     @Test
     public void test_multiply_both_zero() {
-        thrown.expect(ArithmeticException.class);
-        ao.multiply(0, 0);
+        Assert.assertEquals(0, ao.multiply(0, 0));
     }
 
     @Test
