@@ -29,4 +29,15 @@ public class MyMath {
         }
     }
 
+    public boolean isPrime(int n) {
+        if (n < 2) {
+            throw new IllegalArgumentException("n should be >=2");
+        } else {
+            for (int i = 2; i < n; i++)
+                if (n % i == 0)
+                    return false;
+        }
+        return true;
+    }
+
 }
