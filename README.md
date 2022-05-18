@@ -1,5 +1,6 @@
 # Unavai-lab-le
 [![Build Status](https://app.travis-ci.com/dbouris/unavai-lab-le.svg?token=EcaweQJuNrz4MSbAx5Me&branch=development)](https://app.travis-ci.com/dbouris/unavai-lab-le)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 This is a repository for the Software Engineering in Practice Course Laboratory Assignments of the Athens University of Bussines and Economics, Department of Magement Science and Technology.
