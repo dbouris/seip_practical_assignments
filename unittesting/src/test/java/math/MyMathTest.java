@@ -5,7 +5,8 @@ import org.junit.rules.ExpectedException;
 
 /**
  * The MyMathTest provides test cases
- * for the exceptions thrown from the factorial method
+ * for the exceptions thrown from the factorial and
+ * the isPrime method.
  * 
  * @author dbouris
  * @version 1.0
@@ -46,5 +47,12 @@ public class MyMathTest {
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("n should be >= 0 and <= 12");
         mm.factorial(-1);
+    }
+
+    @Test
+    public void test_isPrime_outOfBounds() {
+        thrown.expect(IllegalArgumentException.class);
+        thrown.expectMessage("n should be >=2");
+        mm.isPrime(1);
     }
 }
