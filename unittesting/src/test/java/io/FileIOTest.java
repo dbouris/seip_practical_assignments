@@ -13,8 +13,8 @@ public class FileIOTest {
 
     @Test
     public void test_readfile_normal() {
-        int[] expectedNumbers = new int[]{
-            10, 14, 12, 18, 16, 22, 20
+        int[] expectedNumbers = new int[] {
+                10, 14, 12, 18, 16, 22, 20
         };
         String resourceName = "normal_file.txt";
         File file = new File(classLoader.getResource(resourceName).getFile());
@@ -42,5 +42,16 @@ public class FileIOTest {
         thrown.expect(IllegalArgumentException.class);
         thrown.expectMessage("Given file is empty");
         fio.readFile(filePath);
+    }
+
+    @Test
+    public void testReadFileContainsInvalidEntries() {
+        int[] expectedNumbers = new int[] {
+                12, 13, 15
+        };
+        String resourceName = "Integers_NonInteger_file.txt";
+        File file = new File(classLoader.getResource(resourceName).getFile());
+        String filePath = file.getAbsolutePath();
+        Assert.assertArrayEquals(expectedNumbers, fio.readFile(filePath));
     }
 }
