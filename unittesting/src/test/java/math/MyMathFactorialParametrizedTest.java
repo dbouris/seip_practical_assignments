@@ -20,7 +20,7 @@ import org.junit.runners.Parameterized.Parameters;
  */
 
 @RunWith(Parameterized.class)
-public class MyMathFactorialParametrized {
+public class MyMathFactorialParametrizedTest {
 
     @Parameter(value = 0)
     public int n;
