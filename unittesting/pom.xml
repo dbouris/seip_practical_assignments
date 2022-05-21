@@ -13,7 +13,8 @@
 
 	<name>Unittesing</name>
 	<description>
-		Dont forget to fill.
+		This module is to practise Unit testing on Java methods 
+		using JUnit framework.
 	</description>
 	<build>
 		<plugins>
