@@ -9,7 +9,7 @@ public class SourceFileReaderFactory {
             return new SourceFileReaderLocal();
         }
         else{
-            return null;
+            return new SourceFileReaderNull();
         }
     }
 }
