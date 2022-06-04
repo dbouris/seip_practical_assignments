@@ -8,7 +8,7 @@ import java.util.Map;
 public class CsvExporter implements MetricsExporter{
 
     @Override
-    public void write(String outputType, Map<String, Integer> metrics, String filepath) {
+    public void write(Map<String, Integer> metrics, String filepath) {
         File outputFile = new File(filepath + ".csv");
 		StringBuilder metricsNames = new StringBuilder();
 		StringBuilder metricsValues = new StringBuilder();

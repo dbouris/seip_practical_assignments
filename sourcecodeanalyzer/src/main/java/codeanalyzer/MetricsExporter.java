@@ -5,5 +5,5 @@ import java.util.Map;
 
 public interface MetricsExporter {
     
-    void write(String outputType, Map<String, Integer> metrics, String filepath);
+    void write(Map<String, Integer> metrics, String filepath);
 }
