@@ -8,7 +8,7 @@ public class MetricsExporterFactory {
         } else if (type.equals("json")) {
             exporter = new JsonExporter();
         } else {
-            return null;
+            exporter = new NullExporter();
         }
         return exporter;
 		
