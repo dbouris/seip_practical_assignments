@@ -1,6 +1,5 @@
 #exclude all the .class / .txt files
 *.class
-*.txt
 
 #exclude all the ide files
 .classpath
