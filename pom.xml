@@ -56,8 +56,4 @@
     </plugins>
   </build>
 
-<modules>  
-  <module>gradeshistogram</module>
-  <module>sourcecodeanalyzer</module>
-</modules>
 </project>
