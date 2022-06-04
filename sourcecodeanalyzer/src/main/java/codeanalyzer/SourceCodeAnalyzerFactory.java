@@ -8,7 +8,7 @@ public class SourceCodeAnalyzerFactory {
         } else if (sourceCodeAnalyzerType.equals("strcomp")){
             analyzer = new SourceCodeAnalyzerString(reader);
         }else {
-            return null;
+            analyzer = new SourceCodeAnalyzerNull();
         }
         return analyzer;
     }
