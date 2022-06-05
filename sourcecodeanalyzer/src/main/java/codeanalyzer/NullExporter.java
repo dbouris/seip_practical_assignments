@@ -6,7 +6,7 @@ public class NullExporter implements MetricsExporter {
 
     @Override
     public void write(Map<String, Integer> metrics, String filepath) {
-        System.err.println("No exporter found");
+       throw new IllegalArgumentException("Unknown file type");
     }
 
 }
