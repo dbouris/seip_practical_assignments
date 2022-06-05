@@ -16,10 +16,8 @@ public class SourceFileReaderLocalTest {
     
     private static List<String> expectedList;
 	private static String expectedString;
-	private final static String TYPE_WEB = "web";
 	private final static String TYPE_LOCAL = "local";
 	private final static String TEST_CLASS_LOCAL = "src/test/resources/TestClass.java";
-	private final static String TEST_CLASS_WEB ="https://drive.google.com/uc?export=download&id=1z51FZXqPyun4oeB7ERFlOgfcoDfLLLhg";
 	
     
     @BeforeClass
