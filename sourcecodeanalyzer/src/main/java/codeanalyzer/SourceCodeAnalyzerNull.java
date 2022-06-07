@@ -2,6 +2,13 @@ package codeanalyzer;
 
 import java.io.IOException;
 
+/**
+ * The class is used when there is no known analyzer.
+ * 
+ * @author agkortzis
+ *
+ */
+
 public class SourceCodeAnalyzerNull implements SourceCodeAnalyzer {
 
     @Override
@@ -23,4 +30,3 @@ public class SourceCodeAnalyzerNull implements SourceCodeAnalyzer {
     }
 
 }
-    

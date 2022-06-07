@@ -4,6 +4,14 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * The class is used call all the methods of the sourcecodeanalyzer 
+ * library and export the results.
+ * 
+ * @author dbouris
+ *
+ */
+
 public class CodeAnalyzer {
     public void generateMetrics(String JavaSourceCodeInputFile, String sourceCodeAnalyzerType,
             String SourceCodeLocationType, String OutputFilePath, String OutputFileType) throws IOException {

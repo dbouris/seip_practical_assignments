@@ -7,7 +7,14 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SourceFileReaderWeb implements SourceFileReader{
+/**
+ * Retrieves (reads) the contents of a given file stored on the Web.
+ * 
+ * @author agkortzis
+ *
+ */
+
+public class SourceFileReaderWeb implements SourceFileReader {
 
     @Override
     public List<String> readFileIntoList(String filepath) throws IOException {
@@ -34,5 +41,5 @@ public class SourceFileReaderWeb implements SourceFileReader{
         reader.close();
         return sb.toString();
     }
-    
+
 }

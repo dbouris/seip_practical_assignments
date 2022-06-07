@@ -7,7 +7,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SourceFileReaderLocal implements SourceFileReader{
+/**
+ * Retrieves (reads) the contents of a given file stored Locally.
+ * 
+ * @author agkortzis
+ *
+ */
+
+public class SourceFileReaderLocal implements SourceFileReader {
 
     @Override
     public List<String> readFileIntoList(String filepath) throws IOException {
@@ -34,5 +41,5 @@ public class SourceFileReaderLocal implements SourceFileReader{
         reader.close();
         return sb.toString();
     }
-    
+
 }

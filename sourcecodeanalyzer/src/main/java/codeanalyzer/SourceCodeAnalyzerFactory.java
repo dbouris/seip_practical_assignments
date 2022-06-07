@@ -1,16 +1,24 @@
 package codeanalyzer;
 
+/**
+ * The class is used to return the correct exporter analyzer
+ * object based on the type and reader.
+ * 
+ * @author dbouris
+ *
+ */
+
 public class SourceCodeAnalyzerFactory {
-    public SourceCodeAnalyzer getSourceCodeAnalyzer(String sourceCodeAnalyzerType, SourceFileReader reader){
+    public SourceCodeAnalyzer getSourceCodeAnalyzer(String sourceCodeAnalyzerType, SourceFileReader reader) {
         SourceCodeAnalyzer analyzer;
-        if (sourceCodeAnalyzerType.equals("regex")){
+        if (sourceCodeAnalyzerType.equals("regex")) {
             analyzer = new SourceCodeAnalyzerRegex(reader);
-        } else if (sourceCodeAnalyzerType.equals("strcomp")){
+        } else if (sourceCodeAnalyzerType.equals("strcomp")) {
             analyzer = new SourceCodeAnalyzerString(reader);
-        }else {
+        } else {
             analyzer = new SourceCodeAnalyzerNull();
         }
         return analyzer;
     }
-        
+
 }
