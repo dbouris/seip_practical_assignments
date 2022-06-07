@@ -37,6 +37,41 @@ arg4 = “OutputFileType” [csv | json]
 View the initial Design of the Lirbary [here]() <br>
 View the new Design of the SourceCodeAnalyzer Library after the major refactoring undertaken [here]().
 
+### Design Patterns
+The Design Patterns mostly used to refactor the SourceCodeAnalyzer module was:
+- Strategy
+- Factory
+- Facade
+- Null Object
+
+To be more precise, the SourceFileReader, SourceCodeAnalyzer and the MetricsExport functionalities were refactored using a combination of the Factory, Strategy and Null Object Design Patterns. The functionalities of the Library are provided to the Client based on the Facade Design Pattern.
+
+### SourceFileReader
+The rafactoring occured using the Factory, Strategy and NUll Object Desing Patterns. To implement those new Design Patters there were some changes needed to be implemented. In particular, following the Strategy pattern a SourceFileReader interface was created and the SourceFileReaderWeb, SourceFileReaderLocal, SourceFileReaderNull which implement this interface. Following the Factory Design Pattern, a SourceFileReaderFactory class was created in order to 'serve' the correct SourceFileReader object (Web - Local) based on the FileLocation parameter.
+
+### SourceCodeAnalyzer
+The rafactoring occured using the Factory, Strategy and NUll Object Desing Patterns. To implement those new Design Patters there were some changes needed to be implemented. In particular, following the Strategy pattern a SourceCodeAnalyzer interface was created and the SourceCodeAnalyzerRegex, SourceCodeAnalyzerString, SourceCodeAnalyzerNull which implement this interface. Following the Factory Design Pattern, a SourceCodeAnalyzerFactory class was created in order to 'serve' the correct SourceCodeAnalyzer object (Regex - Strcomp) based on the AnalyzerType parameter.
+
+### MetricsExporter
+The rafactoring occured using the Factory, Strategy and NUll Object Desing Patterns. To implement those new Design Patters there were some changes needed to be implemented. In particular, following the Strategy pattern a MetricsExporter interface was created and the CsvExporter, JsonExporter, NullExporter which implement this interface. Following the Factory Design Pattern, a MetricsExporterFactory class was created in order to 'serve' the correct MetricsExporter object (Csv - Json) based on the OutputFileType parameter.
+
+### CodeAnalyzer
+The refactoring occured using the Facade Design Pattern as there was a need to use the Library as an independent library, and thus, hide any implementation details from the DemoClient. Inside the CodeAnalyzer class, there is a method created in order to handle all the functionalities and the method calls of the Library.
+
+### Benefits
+
+- The factory classes help in order to decouple the Client from the SourceCodeAnalyzer, SourceFileReaders and MetricsExporters implementations.
+- The Strategy Desing Pattern helps toward the extensibility of the SourceCodeAnalyzers, SourceFileReaders and the MetricsExporters.
+- Each class now has a single responsiblity and follows the single responsiblity principle.
+- Null Exporters - Analyzers - Readers are handled.
+- A simple interface is now provided to use the Library.
+- De-couples the subsystem for clients and other subsystems, thereby promoting subsystem independence and portability
+
+
+### Trade-offs
+- Big number of Classes required
+- Big number of Abstractions required
+- Higher complexity  
 
 
 ## Author
