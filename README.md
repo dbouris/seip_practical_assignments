@@ -14,6 +14,9 @@ Create a Java application (using the Maven build-automation tool) that reads a f
 ### Exercise 2
 Create test cases that challenge the functionality of a given set of Java source files. The goal of this assignment is to get familiar with unit testing and continuous integration.You can find the project [here](https://github.com/dbouris/unavai-lab-le/tree/development/unittesting)
 
+### Exercise 3
+Modify a given code base to improve the quality of the system. The goal of this assignment is to get familiar with design principles by refactoring code and applying design patterns on a given code base. You can find the project [here] (https://github.com/dbouris/unavai-lab-le/tree/dev2/sourcecodeanalyzer)
+
 ---
 
 ## Author 
