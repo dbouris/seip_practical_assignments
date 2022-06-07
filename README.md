@@ -1,6 +1,6 @@
 # Unavai-lab-le
 [![Build Status](https://app.travis-ci.com/dbouris/unavai-lab-le.svg?token=EcaweQJuNrz4MSbAx5Me&branch=development)](https://app.travis-ci.com/dbouris/unavai-lab-le)
-[![codecov](https://codecov.io/gh/dbouris/unavai-lab-le/branch/development/graph/badge.svg?token=GVZL6ZI05H)](https://codecov.io/gh/dbouris/unavai-lab-le)
+[![codecov](https://codecov.io/gh/dbouris/unavai-lab-le/branch/dev2/graph/badge.svg?token=GVZL6ZI05H)](https://codecov.io/gh/dbouris/unavai-lab-le)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
