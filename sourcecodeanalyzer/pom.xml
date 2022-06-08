@@ -16,7 +16,10 @@
 
 	
 	<name>Design Patterns assignment's code base</name>
-	<description>This module contains the code base that will serve as the starting point for the design pattern assignment</description>
+	<description>This module contains the code base that will serve as the starting point for 
+		the design pattern assignment. Target of the assignment is to refactor the given code base 
+		implementing the known design patterns.
+	</description>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
