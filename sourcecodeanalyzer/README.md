@@ -34,8 +34,8 @@ arg3 = “OutputFilePath” (e.g., ../output_metrics_file)<br>
 arg4 = “OutputFileType” [csv | json]
 
 ## Refactoring
-View the initial Design of the Lirbary [here]() <br>
-View the new Design of the SourceCodeAnalyzer Library after the major refactoring undertaken [here]().
+View the initial Design of the Lirbary [here](https://github.com/dbouris/unavai-lab-le/blob/dev2/sourcecodeanalyzer/SourceCodeAnalyzer_v0.png) <br>
+View the new Design of the SourceCodeAnalyzer Library after the major refactoring undertaken [here](https://github.com/dbouris/unavai-lab-le/blob/dev2/sourcecodeanalyzer/SourceCodeAnalyzer_v1.png).
 
 ### Design Patterns
 The Design Patterns mostly used to refactor the SourceCodeAnalyzer module was:
