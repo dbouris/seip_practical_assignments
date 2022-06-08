@@ -4,6 +4,12 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import codeanalyzer.readers.SourceFileReader;
+import codeanalyzer.readers.SourceFileReaderFactory;
+import codeanalyzer.readers.SourceFileReaderLocal;
+import codeanalyzer.readers.SourceFileReaderNull;
+import codeanalyzer.readers.SourceFileReaderWeb;
+
 public class SourceFileReaderFactoryTest {
 
     // test the SourceFileReaderFactory class for the local file reader

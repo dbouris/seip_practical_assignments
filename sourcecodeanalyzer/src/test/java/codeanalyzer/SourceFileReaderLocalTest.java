@@ -12,6 +12,9 @@ import java.util.List;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
+import codeanalyzer.readers.SourceFileReader;
+import codeanalyzer.readers.SourceFileReaderFactory;
+
 public class SourceFileReaderLocalTest {
     
     private static List<String> expectedList;

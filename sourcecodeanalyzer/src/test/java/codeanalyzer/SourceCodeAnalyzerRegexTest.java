@@ -6,6 +6,11 @@ import java.io.IOException;
 
 import org.junit.Test;
 
+import codeanalyzer.analyzers.SourceCodeAnalyzer;
+import codeanalyzer.analyzers.SourceCodeAnalyzerRegex;
+import codeanalyzer.readers.SourceFileReader;
+import codeanalyzer.readers.SourceFileReaderLocal;
+
 public class SourceCodeAnalyzerRegexTest {
     
     private final static String TEST_CLASS = "src/test/resources/TestClass.java";

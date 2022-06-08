@@ -1,26 +1,26 @@
-package codeanalyzer;
+package codeanalyzer.readers;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Retrieves (reads) the contents of a given file stored on the Web.
+ * Retrieves (reads) the contents of a given file stored Locally.
  * 
  * @author agkortzis
  *
  */
 
-public class SourceFileReaderWeb implements SourceFileReader {
+public class SourceFileReaderLocal implements SourceFileReader {
 
     @Override
     public List<String> readFileIntoList(String filepath) throws IOException {
         List<String> lines = new ArrayList<>();
-        URL url = new URL(filepath);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+        File file = new File(filepath);
+        BufferedReader reader = new BufferedReader(new FileReader(file));
         String line = null;
         while ((line = reader.readLine()) != null) {
             lines.add(line);
@@ -32,8 +32,8 @@ public class SourceFileReaderWeb implements SourceFileReader {
     @Override
     public String readFileIntoString(String filepath) throws IOException {
         StringBuilder sb = new StringBuilder();
-        URL url = new URL(filepath);
-        BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
+        File file = new File(filepath);
+        BufferedReader reader = new BufferedReader(new FileReader(file));
         String line = null;
         while ((line = reader.readLine()) != null) {
             sb.append(line + "\n");

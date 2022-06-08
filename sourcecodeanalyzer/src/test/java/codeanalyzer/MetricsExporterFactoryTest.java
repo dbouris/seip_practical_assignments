@@ -4,6 +4,11 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import codeanalyzer.exporters.CsvExporter;
+import codeanalyzer.exporters.JsonExporter;
+import codeanalyzer.exporters.MetricsExporter;
+import codeanalyzer.exporters.MetricsExporterFactory;
+
 public class MetricsExporterFactoryTest {
     
     // test the MetricsExporterFactory class for the csv type

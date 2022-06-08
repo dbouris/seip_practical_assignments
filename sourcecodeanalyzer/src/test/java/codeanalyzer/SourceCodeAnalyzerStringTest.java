@@ -6,6 +6,11 @@ import java.io.IOException;
 
 import org.junit.Test;
 
+import codeanalyzer.analyzers.SourceCodeAnalyzer;
+import codeanalyzer.analyzers.SourceCodeAnalyzerString;
+import codeanalyzer.readers.SourceFileReader;
+import codeanalyzer.readers.SourceFileReaderLocal;
+
 public class SourceCodeAnalyzerStringTest {
     private final static String TEST_CLASS = "src/test/resources/TestClass.java";
 

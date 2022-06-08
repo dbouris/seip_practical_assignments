@@ -7,6 +7,9 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 
+import codeanalyzer.exporters.MetricsExporter;
+import codeanalyzer.exporters.NullExporter;
+
 
 public class NullExporterTest {
 

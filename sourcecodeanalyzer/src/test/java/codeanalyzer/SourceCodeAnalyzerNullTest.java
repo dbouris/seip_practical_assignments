@@ -6,6 +6,8 @@ import java.io.IOException;
 
 import org.junit.Test;
 
+import codeanalyzer.analyzers.SourceCodeAnalyzerNull;
+
 public class SourceCodeAnalyzerNullTest {
     
     // create the SourceCodeAnalyzerNull object

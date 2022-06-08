@@ -4,6 +4,14 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import codeanalyzer.analyzers.SourceCodeAnalyzer;
+import codeanalyzer.analyzers.SourceCodeAnalyzerFactory;
+import codeanalyzer.analyzers.SourceCodeAnalyzerNull;
+import codeanalyzer.analyzers.SourceCodeAnalyzerRegex;
+import codeanalyzer.analyzers.SourceCodeAnalyzerString;
+import codeanalyzer.readers.SourceFileReaderLocal;
+import codeanalyzer.readers.SourceFileReaderWeb;
+
 public class SourceCodeAnalyzerFactoryTest {
     
     // test the SourceCodeAnalyzerFactory class for the regex type and local reader

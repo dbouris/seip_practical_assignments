@@ -1,4 +1,6 @@
-package codeanalyzer;
+package codeanalyzer.analyzers;
+
+import codeanalyzer.readers.SourceFileReader;
 
 /**
  * The class is used to return the correct exporter analyzer

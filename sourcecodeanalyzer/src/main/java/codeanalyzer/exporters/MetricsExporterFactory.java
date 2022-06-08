@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.exporters;
 
 /**
  * This is a Factory class that returns the correct exporter

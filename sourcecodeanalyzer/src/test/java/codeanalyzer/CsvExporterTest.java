@@ -8,6 +8,9 @@ import java.util.Map;
 import org.junit.Assert;
 import org.junit.Test;
 
+import codeanalyzer.exporters.CsvExporter;
+import codeanalyzer.exporters.MetricsExporter;
+
 
 public class CsvExporterTest {
 

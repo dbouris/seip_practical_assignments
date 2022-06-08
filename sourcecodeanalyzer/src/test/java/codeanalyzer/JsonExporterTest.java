@@ -7,6 +7,9 @@ import java.util.Map;
 
 import org.junit.Test;
 
+import codeanalyzer.exporters.JsonExporter;
+import codeanalyzer.exporters.MetricsExporter;
+
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.doCallRealMethod;

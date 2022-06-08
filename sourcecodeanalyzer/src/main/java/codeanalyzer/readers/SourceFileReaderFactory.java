@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.readers;
 
 /**
  * The class is used to return the correct reader object based on the FileType.

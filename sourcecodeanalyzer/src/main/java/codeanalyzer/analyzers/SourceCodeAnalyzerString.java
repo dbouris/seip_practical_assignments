@@ -1,7 +1,9 @@
-package codeanalyzer;
+package codeanalyzer.analyzers;
 
 import java.io.IOException;
 import java.util.List;
+
+import codeanalyzer.readers.SourceFileReader;
 
 /**
  * Analyzes the contents of a Java source code file 

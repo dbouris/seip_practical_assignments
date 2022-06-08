@@ -4,6 +4,12 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import codeanalyzer.exporters.MetricsExporter;
+import codeanalyzer.exporters.MetricsExporterFactory;
+import codeanalyzer.readers.SourceFileReader;
+import codeanalyzer.readers.SourceFileReaderFactory;
+import codeanalyzer.analyzers.*;;
+
 /**
  * The class is used call all the methods of the sourcecodeanalyzer 
  * library and export the results.
