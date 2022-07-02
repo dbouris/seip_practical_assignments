@@ -7,6 +7,7 @@ branches:
   only:
     - development
     - main
+    - dev2
 
 before_script:
   - ls -la
@@ -17,4 +18,6 @@ after_success:
   - after_success:
   - bash <(curl -s https://codecov.io/bash) -t 8cef0263-d2d7-43c0-91b5-2d3040a628fa
   - echo "Process terminated successfully."
+  - java -jar sourcecodeanalyzer/target/sourcecodeanalyzer-1.0-SNAPSHOT-jar-with-dependencies.jar sourcecodeanalyzer/src/main/resources/TestClass.java regex local sourcecodeanalyzer/target/pao csv
+  - diff sourcecodeanalyzer/target/pao.csv sourcecodeanalyzer/src/main/resources/expected.csv
 
